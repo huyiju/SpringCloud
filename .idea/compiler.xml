@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="ConsulClient1" />
+        <module name="ConsulClient2" />
+        <module name="ConsulService1" />
+        <module name="EurekaClient1" />
+        <module name="EurekaClient2" />
+        <module name="EurekaConsumer1" />
+        <module name="EurekaConsumer2" />
+        <module name="EurekaService1" />
+        <module name="EurekaService2" />
+        <module name="GateWay1" />
+        <module name="ShopCommon" />
+        <module name="ShopOrder" />
+        <module name="ShopProduct" />
+        <module name="ShopUser" />
+      </profile>
+    </annotationProcessing>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="ConsulClient1" options="-parameters" />
+      <module name="ConsulClient2" options="-parameters" />
+      <module name="ConsulService1" options="-parameters" />
+      <module name="EurekaClient1" options="-parameters" />
+      <module name="EurekaClient2" options="-parameters" />
+      <module name="EurekaConsumer1" options="-parameters" />
+      <module name="EurekaConsumer2" options="-parameters" />
+      <module name="EurekaService1" options="-parameters" />
+      <module name="EurekaService2" options="-parameters" />
+      <module name="GateWay1" options="-parameters" />
+      <module name="ShopCommon" options="-parameters" />
+      <module name="ShopOrder" options="-parameters" />
+      <module name="ShopProduct" options="-parameters" />
+      <module name="ShopUser" options="-parameters" />
+    </option>
+  </component>
+</project>

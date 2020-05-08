@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.thit.dao.UserMapper">
+
+
+    <resultMap id="User" type="com.thit.entity.User">
+        <id column="id" jdbcType="INTEGER" property="id"/>
+        <result column="name" jdbcType="VARCHAR" property="name"/>
+        <result column="address" jdbcType="VARCHAR" property="address"/>
+        <result column="class_id" jdbcType="INTEGER" property="class_id"/>
+    </resultMap>
+
+
+    <insert id="add" parameterType="com.thit.entity.User"  useGeneratedKeys="true"
+            keyProperty="id">
+        insert into user (id,name,address,class_id)
+        values (#{id},#{name},#{address},#{class_id})
+
+    </insert>
+
+    <select id="selectbyid" resultMap="User" parameterType="int">
+
+      select * from user
+      where
+      id = #{id,jdbcType=INTEGER}
+
+
+    </select>
+
+
+    <select id="selectall" resultMap="User" parameterType="int">
+
+      select * from user
+
+
+
+    </select>
+
+    <select id="selectbyname" resultMap="User" parameterType="String">
+
+      select * from user
+      where name= #{name,jdbcType=VARCHAR}
+
+
+
+    </select>
+
+
+
+
+
+
+
+
+
+</mapper>

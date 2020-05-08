@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding" addBOMForNewFiles="with NO BOM">
+    <file url="file://$PROJECT_DIR$" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ConsulClient1" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ConsulClient2" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ConsulService1" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/EurekaClient1" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/EurekaClient2" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/EurekaConsumer1" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/EurekaConsumer2" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/EurekaService1" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/EurekaService2" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/GateWay1" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ShopCommon" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ShopOrder" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ShopProduct" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ShopUser" charset="UTF-8" />
+  </component>
+</project>

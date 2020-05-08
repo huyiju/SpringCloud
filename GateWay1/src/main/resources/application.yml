@@ -1,0 +1,69 @@
+#端口
+server:
+  port: 8077
+
+
+ #服务名
+#spring:
+#  application:
+#    name: GateWay1
+#  cloud:
+#    gateway:
+#      discovery:
+#        locator:
+#          enabled: true #开启注册中心获取路由
+#      routes:
+#        - id: after_route
+#        uri: lb://client
+#            predicates:
+#              - path=/add
+#              #- After=2020-04-35T20:25:29.357+08:00[Asia/Shanghai]
+#
+
+# 约定大于配置
+# After路由断言工厂
+# 约定为AddRequestHeader，对应的是AddRequestHeaderGateFilterFactory过滤器，
+# 此示例将会在请求头中添加 X-Request-Foo请求头
+spring:
+  cloud:
+    gateway:
+      discovery:
+        locator:
+          enabled: true #开启注册中心获取路由
+      routes:
+        - id: route1
+          uri: lb://client
+          filters:
+            # 添加请求参数 foo=bar; 在query串中添加
+            - AddRequestParameter=password,345
+            - AddResponseHeader=X-Response-Foo,Bar
+
+          predicates:
+            - Path=/add2/**
+            - After=2020-04-29T21:56:19.163+08:00[Asia/Shanghai]
+           # - Cookie=name,123
+            - Method=GET
+
+        - id: route2
+          uri: lb://client
+          filters:
+            # 添加请求参数 password=345; 在query串中添加
+            - AddRequestParameter=password,345
+            - AddResponseHeader=X-Response-Foo,Bar
+          predicates:
+            - Path=/add
+           # - After=2020-04-29T21:56:19.163+08:00[Asia/Shanghai]
+            - Cookie=name,123
+            - Method=GET
+
+#时间匹配 After=2020-04-29T21:56:19.163+08:00[Asia/Shanghai] 自此时间之后生效
+#时间匹配 Before 在时间之前生效
+#cookie匹配 Cookie=name,123  cookie的{name,123}才能生效
+#方法匹配  - Method=GET 方法匹配
+#集群配置
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://eservice2:8082/eureka/,http://eservice1:8081/eureka/
+    register-with-eureka: true
+    fetch-registry: true

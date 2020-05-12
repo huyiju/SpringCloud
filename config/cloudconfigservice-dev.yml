@@ -1,1 +1,2 @@
-data:dev
+data:
+  env: config-eureka-test

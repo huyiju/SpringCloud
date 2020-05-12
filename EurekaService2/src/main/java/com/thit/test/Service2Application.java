@@ -15,6 +15,7 @@ import org.springframework.context.annotation.ComponentScan;
 @EnableEurekaServer //此注解用来表示这是service
 public class Service2Application {
     public static void main(String[] args) {
+        System.out.println("222222测试过");
         SpringApplication.run(Service2Application.class,args);
     }
 }

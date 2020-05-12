@@ -19,8 +19,8 @@ public class UserController {
     private  String port;
     @RequestMapping(value = "/add",method = RequestMethod.GET)
     public String add(){
-        System.out.println("端口号："+port);
-        return "端口号："+port;
+        System.out.println("端口号3："+port);
+        return "端口号123："+port;
     }
 
     @RequestMapping(value = "/add2/{name}",method = RequestMethod.GET)

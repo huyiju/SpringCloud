@@ -16,16 +16,16 @@
         <module name="EurekaService1" />
         <module name="EurekaService2" />
         <module name="GateWay1" />
-        <module name="ShopCommon" />
-        <module name="ShopOrder" />
         <module name="ShopProduct" />
-        <module name="ShopUser" />
         <module name="SpringConfig" />
         <module name="SpringConfigClient1" />
         <module name="SpringConfigClient2" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="ShopCommon" target="1.8" />
+      <module name="ShopOrder" target="1.8" />
+      <module name="ShopUser" target="1.8" />
       <module name="SpringConfigClient" target="1.8" />
     </bytecodeTargetLevel>
   </component>

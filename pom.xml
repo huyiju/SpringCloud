@@ -27,6 +27,9 @@
         <module>EurekaConsumer2</module>
         <module>GateWay1</module>
         <module>SpringConfig</module>
+        <module>SpringConfigClient</module>
+        <module>SpringConfigClient1</module>
+        <module>SpringConfigClient2</module>
     </modules>
 
 

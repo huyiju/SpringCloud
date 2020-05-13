@@ -1,0 +1,39 @@
+#端口
+server:
+  port: 3366
+
+
+
+#eureka集群注册
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://eservice2:8082/eureka/,http://eservice1:8081/eureka/
+    register-with-eureka: true
+    fetch-registry: true
+
+
+
+spring:
+  application:
+    name: cloudconfigclient
+  cloud:
+    config:
+      label: master #分支名字
+      name: cloudconfigservice #文件名字 http://localhost:3344/master/a-dev.yml
+      uri: http://localhost:3344 #配置中心地址
+      profile: test  #文件后缀
+    #此处是mq配置
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: guest
+    password: guest
+
+
+  #监控配置
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"

@@ -1,0 +1,36 @@
+#端口
+server:
+  port: 3344
+
+
+
+#eureka集群注册
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://eservice2:8082/eureka/,http://eservice1:8081/eureka/
+    register-with-eureka: true
+    fetch-registry: true
+spring:
+  application:
+    name: cloudconfigservice
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/huyiju/SpringCloud.git #配置文件所在仓库
+          search-paths: config  #配置路径
+      label: master #配置分支
+      #此处是mq配置
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: guest
+    password: guest
+
+#暴露bus刷新配置的端点
+management:
+  endpoints:
+    web:
+      exposure:
+        include: 'bus-refresh'

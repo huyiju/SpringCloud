@@ -9,23 +9,25 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>SpringConfig</artifactId>
+    <artifactId>SpringConfigClient1</artifactId>
+
 
     <dependencies>
 
 
 
-        <!--引入springcloud config 服务端-->
 
+        <!-- spring cloud config 客户端包 -->
         <dependency>
             <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-config-server</artifactId>
+            <artifactId>spring-cloud-starter-config</artifactId>
         </dependency>
-        <!-- busy依赖 支持activemq消息对列-->
+        <!--添加消息总线RabbitMQ支持-->
         <dependency>
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-bus-amqp</artifactId>
         </dependency>
+
 
         <!--Spring web 依赖-->
         <dependency>

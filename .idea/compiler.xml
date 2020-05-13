@@ -21,8 +21,13 @@
         <module name="ShopProduct" />
         <module name="ShopUser" />
         <module name="SpringConfig" />
+        <module name="SpringConfigClient1" />
+        <module name="SpringConfigClient2" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="SpringConfigClient" target="1.8" />
+    </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
@@ -41,6 +46,9 @@
       <module name="ShopProduct" options="-parameters" />
       <module name="ShopUser" options="-parameters" />
       <module name="SpringConfig" options="-parameters" />
+      <module name="SpringConfigClient" options="-parameters" />
+      <module name="SpringConfigClient1" options="-parameters" />
+      <module name="SpringConfigClient2" options="-parameters" />
     </option>
   </component>
 </project>

@@ -12,7 +12,8 @@ import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 @EnableDiscoveryClient //服务发现注解
 public class Mian8001 {
     public static void main(String[] args) {
-        System.out.println("12312");
+        System.out.println("1111");
+        //System.out.println("服务器");
         SpringApplication.run(Mian8001.class,args);
 
     }

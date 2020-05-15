@@ -2,12 +2,10 @@
 <project version="4">
   <component name="CompilerConfiguration">
     <annotationProcessing>
-      <profile default="true" name="Default" enabled="true" />
       <profile name="Maven default annotation processors profile" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="aa" />
         <module name="ConsulClient1" />
         <module name="ConsulClient2" />
         <module name="ConsulService1" />
@@ -18,6 +16,7 @@
         <module name="EurekaService1" />
         <module name="EurekaService2" />
         <module name="GateWay1" />
+        <module name="NacosService8001" />
         <module name="ShopProduct" />
         <module name="SpringConfig" />
         <module name="SpringConfigClient1" />
@@ -28,14 +27,25 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="NacosService1" target="1.8" />
-      <module name="NacosService9001" target="1.8" />
-      <module name="NacosService9002" target="1.8" />
-      <module name="ShopCommon" target="1.8" />
-      <module name="ShopOrder" target="1.8" />
-      <module name="ShopUser" target="1.8" />
-      <module name="SpringConfigClient" target="1.8" />
-      <module name="SpringStreamConsumer8002" target="1.8" />
+      <module name="ConsulClient1" target="1.8" />
+      <module name="ConsulClient2" target="1.8" />
+      <module name="ConsulService1" target="1.8" />
+      <module name="EurekaClient1" target="1.8" />
+      <module name="EurekaClient2" target="1.8" />
+      <module name="EurekaConsumer1" target="1.8" />
+      <module name="EurekaConsumer2" target="1.8" />
+      <module name="EurekaService1" target="1.8" />
+      <module name="EurekaService2" target="1.8" />
+      <module name="GateWay1" target="1.8" />
+      <module name="NacosService8001" target="1.8" />
+      <module name="ShopProduct" target="1.8" />
+      <module name="SpringConfig" target="1.8" />
+      <module name="SpringConfigClient1" target="1.8" />
+      <module name="SpringConfigClient2" target="1.8" />
+      <module name="SpringCouldAlibaba" target="1.8" />
+      <module name="SpringStreamConsumer8003" target="1.8" />
+      <module name="SpringStreamConsumer8004" target="1.8" />
+      <module name="SpringStreamProducer8001" target="1.8" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
@@ -50,22 +60,14 @@
       <module name="EurekaService1" options="-parameters" />
       <module name="EurekaService2" options="-parameters" />
       <module name="GateWay1" options="-parameters" />
-      <module name="NacosService1" options="-parameters" />
-      <module name="NacosService9001" options="-parameters" />
-      <module name="NacosService9002" options="-parameters" />
-      <module name="ShopCommon" options="-parameters" />
-      <module name="ShopOrder" options="-parameters" />
+      <module name="NacosService8001" options="-parameters" />
       <module name="ShopProduct" options="-parameters" />
-      <module name="ShopUser" options="-parameters" />
       <module name="SpringConfig" options="-parameters" />
-      <module name="SpringConfigClient" options="-parameters" />
       <module name="SpringConfigClient1" options="-parameters" />
       <module name="SpringConfigClient2" options="-parameters" />
-      <module name="SpringStreamConsumer8002" options="-parameters" />
       <module name="SpringStreamConsumer8003" options="-parameters" />
       <module name="SpringStreamConsumer8004" options="-parameters" />
       <module name="SpringStreamProducer8001" options="-parameters" />
-      <module name="aa" options="-parameters" />
     </option>
   </component>
 </project>

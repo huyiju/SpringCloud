@@ -9,7 +9,7 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>NacosService9002</artifactId>
+    <artifactId>NacosService8001</artifactId>
 
     <dependencies>
 
@@ -20,9 +20,6 @@
             <groupId>com.alibaba.cloud</groupId>
             <artifactId>spring-cloud-starter-alibaba-nacos-discovery</artifactId>
         </dependency>
-
-
-
 
         <!--Spring web 依赖-->
         <dependency>
@@ -41,19 +38,5 @@
 
     </dependencies>
 
-
-    <!--热部署插件-->
-    <build>
-        <plugins>
-            <plugin>
-                <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-maven-plugin</artifactId>
-                <configuration>
-                    <fork>true</fork>
-                    <addResources>true</addResources>
-                </configuration>
-            </plugin>
-        </plugins>
-    </build>
 
 </project>

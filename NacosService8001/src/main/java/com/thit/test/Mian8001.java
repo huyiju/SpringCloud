@@ -10,9 +10,10 @@ import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
  */
 @SpringBootApplication
 @EnableDiscoveryClient //服务发现注解
-public class Mian9002 {
+public class Mian8001 {
     public static void main(String[] args) {
-        SpringApplication.run(Mian9002.class,args);
+        System.out.println("12312");
+        SpringApplication.run(Mian8001.class,args);
 
     }
 

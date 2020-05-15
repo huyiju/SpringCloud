@@ -1,48 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="ExternalStorageConfigurationManager" enabled="true" />
-  <component name="FrameworkDetectionExcludesConfiguration">
-    <type id="Spring" />
-  </component>
-  <component name="JavaScriptSettings">
-    <option name="languageLevel" value="ES6" />
-  </component>
   <component name="MavenProjectsManager">
     <option name="originalFiles">
       <list>
-        <option value="$PROJECT_DIR$/SpringConfigClient2/pom.xml" />
-        <option value="$PROJECT_DIR$/ShopProduct/pom.xml" />
-        <option value="$PROJECT_DIR$/EurekaClient2/pom.xml" />
         <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/EurekaService1/pom.xml" />
-        <option value="$PROJECT_DIR$/GateWay1/pom.xml" />
-        <option value="$PROJECT_DIR$/ConsulClient1/pom.xml" />
-        <option value="$PROJECT_DIR$/SpringStreamConsumer8004/pom.xml" />
-        <option value="$PROJECT_DIR$/SpringStreamConsumer8003/pom.xml" />
-        <option value="$PROJECT_DIR$/SpringConfigClient1/pom.xml" />
-        <option value="$PROJECT_DIR$/ConsulService1/pom.xml" />
-        <option value="$PROJECT_DIR$/EurekaConsumer1/pom.xml" />
-        <option value="$PROJECT_DIR$/EurekaClient1/pom.xml" />
-        <option value="$PROJECT_DIR$/SpringStreamProducer8001/pom.xml" />
-        <option value="$PROJECT_DIR$/EurekaService2/pom.xml" />
-        <option value="$PROJECT_DIR$/EurekaConsumer2/pom.xml" />
-        <option value="$PROJECT_DIR$/ConsulClient2/pom.xml" />
-        <option value="$PROJECT_DIR$/SpringConfig/pom.xml" />
       </list>
     </option>
-    <option name="ignoredFiles">
-      <set>
-        <option value="$PROJECT_DIR$/NacosService9001/pom.xml" />
-        <option value="$PROJECT_DIR$/ShopCommon/pom.xml" />
-        <option value="$PROJECT_DIR$/ShopOrder/pom.xml" />
-        <option value="$PROJECT_DIR$/ShopUser/pom.xml" />
-        <option value="$PROJECT_DIR$/SpringConfigClient/SpringConfigClient1/pom.xml" />
-        <option value="$PROJECT_DIR$/SpringConfigClient/pom.xml" />
-        <option value="$PROJECT_DIR$/SpringStreamConsumer8002/pom.xml" />
-      </set>
-    </option>
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" project-jdk-name="1.8" project-jdk-type="JavaSDK">
-    <output url="file://$PROJECT_DIR$/out" />
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" project-jdk-name="1.8 (2)" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/classes" />
   </component>
 </project>

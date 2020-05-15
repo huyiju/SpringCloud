@@ -21,7 +21,7 @@ spring:
           uri: https://github.com/huyiju/SpringCloud.git #配置文件所在仓库
           search-paths: config  #配置路径
       label: master #配置分支
-      #此处是mq配置
+ #此处是mq配置 用到bus的时候需要配置 动态通知
   rabbitmq:
     host: localhost
     port: 5672

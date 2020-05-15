@@ -32,6 +32,7 @@
     </option>
     <option name="ignoredFiles">
       <set>
+        <option value="$PROJECT_DIR$/NacosService9001/pom.xml" />
         <option value="$PROJECT_DIR$/ShopCommon/pom.xml" />
         <option value="$PROJECT_DIR$/ShopOrder/pom.xml" />
         <option value="$PROJECT_DIR$/ShopUser/pom.xml" />

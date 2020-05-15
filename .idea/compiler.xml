@@ -2,10 +2,12 @@
 <project version="4">
   <component name="CompilerConfiguration">
     <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
       <profile name="Maven default annotation processors profile" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="aa" />
         <module name="ConsulClient1" />
         <module name="ConsulClient2" />
         <module name="ConsulService1" />
@@ -26,6 +28,9 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="NacosService1" target="1.8" />
+      <module name="NacosService9001" target="1.8" />
+      <module name="NacosService9002" target="1.8" />
       <module name="ShopCommon" target="1.8" />
       <module name="ShopOrder" target="1.8" />
       <module name="ShopUser" target="1.8" />
@@ -45,6 +50,9 @@
       <module name="EurekaService1" options="-parameters" />
       <module name="EurekaService2" options="-parameters" />
       <module name="GateWay1" options="-parameters" />
+      <module name="NacosService1" options="-parameters" />
+      <module name="NacosService9001" options="-parameters" />
+      <module name="NacosService9002" options="-parameters" />
       <module name="ShopCommon" options="-parameters" />
       <module name="ShopOrder" options="-parameters" />
       <module name="ShopProduct" options="-parameters" />
@@ -57,6 +65,7 @@
       <module name="SpringStreamConsumer8003" options="-parameters" />
       <module name="SpringStreamConsumer8004" options="-parameters" />
       <module name="SpringStreamProducer8001" options="-parameters" />
+      <module name="aa" options="-parameters" />
     </option>
   </component>
 </project>

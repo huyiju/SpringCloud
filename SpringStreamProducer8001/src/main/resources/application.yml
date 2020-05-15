@@ -3,7 +3,6 @@ server:
   port: 8001
 
 
-
 #eureka集群注册
 eureka:
   client:

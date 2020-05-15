@@ -23,7 +23,7 @@ spring:
       name: cloudconfigservice #文件名字 http://localhost:3344/master/a-dev.yml
       uri: http://localhost:3344 #配置中心地址
       profile: test  #文件后缀
-    #此处是mq配置
+    #此处是mq配置用到bus的时候 动态通知需要配置
   rabbitmq:
     host: localhost
     port: 5672

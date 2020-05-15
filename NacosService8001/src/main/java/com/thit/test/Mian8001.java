@@ -14,6 +14,8 @@ public class Mian8001 {
     public static void main(String[] args) {
         System.out.println("1111");
         //System.out.println("服务器");
+         System.out.println("服务器新增");
+
         SpringApplication.run(Mian8001.class,args);
 
     }

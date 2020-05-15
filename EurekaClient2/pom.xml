@@ -33,11 +33,7 @@
             <artifactId>spring-boot-starter-actuator</artifactId>
         </dependency>
 
-        <dependency>
-            <groupId>com.thit</groupId>
-            <artifactId>ShopCommon</artifactId>
-            <version>1.0-SNAPSHOT</version>
-        </dependency>
+
         <!-- 这个需要为 true 热部署才有效 -->
         <dependency>
             <groupId>org.springframework.boot</groupId>

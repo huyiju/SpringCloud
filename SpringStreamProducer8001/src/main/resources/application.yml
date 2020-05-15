@@ -1,0 +1,33 @@
+#端口
+server:
+  port: 8001
+
+
+
+#eureka集群注册
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://eservice2:8082/eureka/,http://eservice1:8081/eureka/
+    register-with-eureka: true
+    fetch-registry: true
+spring:
+  application:
+    name: producer8001
+  cloud:
+    stream:
+      binders: #在此处配置要绑定的rabbitmq的服务信息
+        defaultRabbit: #表示定义的命名，用于binding整合
+          type: rabbit #消息组件类型
+          environment: #设置rabbitmq的相关环境配置
+            spring:
+              tabbitmq:
+                host: localhost
+                port: 5672
+                username: guest
+                password: guest
+      bindings: #服务的整合处理
+        output: #此处代表生产者
+          destination: huyijuExchange #表示要使用的Exchange名称定义
+          content-type: application/json #设置消息类型，本次为json，文本则为 text/plain
+          binder: defaultRabbit #设置要绑定的消息服务的具体设置

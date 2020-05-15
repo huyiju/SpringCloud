@@ -20,6 +20,9 @@
         <module name="SpringConfig" />
         <module name="SpringConfigClient1" />
         <module name="SpringConfigClient2" />
+        <module name="SpringStreamConsumer8003" />
+        <module name="SpringStreamConsumer8004" />
+        <module name="SpringStreamProducer8001" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -27,6 +30,7 @@
       <module name="ShopOrder" target="1.8" />
       <module name="ShopUser" target="1.8" />
       <module name="SpringConfigClient" target="1.8" />
+      <module name="SpringStreamConsumer8002" target="1.8" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
@@ -49,6 +53,10 @@
       <module name="SpringConfigClient" options="-parameters" />
       <module name="SpringConfigClient1" options="-parameters" />
       <module name="SpringConfigClient2" options="-parameters" />
+      <module name="SpringStreamConsumer8002" options="-parameters" />
+      <module name="SpringStreamConsumer8003" options="-parameters" />
+      <module name="SpringStreamConsumer8004" options="-parameters" />
+      <module name="SpringStreamProducer8001" options="-parameters" />
     </option>
   </component>
 </project>

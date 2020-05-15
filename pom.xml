@@ -11,10 +11,8 @@
 
 
     <modules>
-        <module>ShopCommon</module>
-        <module>ShopUser</module>
+
         <module>ShopProduct</module>
-        <module>ShopOrder</module>
         <module>EurekaService1</module>
         <module>EurekaClient1</module>
         <module>EurekaClient2</module>
@@ -27,9 +25,11 @@
         <module>EurekaConsumer2</module>
         <module>GateWay1</module>
         <module>SpringConfig</module>
-        <module>SpringConfigClient</module>
         <module>SpringConfigClient1</module>
         <module>SpringConfigClient2</module>
+        <module>SpringStreamProducer8001</module>
+        <module>SpringStreamConsumer8003</module>
+        <module>SpringStreamConsumer8004</module>
     </modules>
 
 
